@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#01b375"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Account"
+            style="@style/AppText" />
+        <ImageView
+            android:id="@+id/acc_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView1"
+            android:src="@drawable/acc_photo"
+            tools:ignore="NotSibling" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/f_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        style="@style/AppText"
+        android:layout_below="@id/top"
+        android:text="@string/acc_name"/>
+    <TextView
+        android:id="@+id/s_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/f_name"
+        style="@style/AppText"
+        android:text="@string/acc_secname"/>
+
+    <LinearLayout
+        android:id="@+id/top_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_name"
+        android:layout_marginTop="50dp"
+        android:background="#fd4848">
+
+        <TextView
+            style="@style/AppText"
+            android:text="Изучено слов"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/AppText"
+            android:text="Изучено тем"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/AppText"
+            android:text="Тренировок пройдено"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_name"
+        android:background="#fd4848">
+        <TextView
+            style="@style/AppText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:textAlignment="center"
+            android:text="0"/>
+
+        <TextView
+            style="@style/AppText"
+            android:text="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/AppText"
+            android:text="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:textAlignment="center" />
+    </LinearLayout>
+</RelativeLayout>
