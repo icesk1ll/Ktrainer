@@ -19,7 +19,6 @@
         <activity android:name=".account" />
         <activity android:name=".training" />
         <activity android:name=".vocabulary" />
-        <activity android:name=".Train1" />
         <activity android:name=".Database"></activity>
     </application>
 

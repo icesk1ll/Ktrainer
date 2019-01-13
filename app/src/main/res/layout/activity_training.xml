@@ -1,83 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/trn_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/AppText"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:textSize="24dp"
-        android:layout_centerHorizontal="true"
-        android:text="Your Daily Training">
-    </TextView>
-    <Button
-        android:id="@+id/btn_trn_1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_below="@id/trn_title"
-        android:layout_centerHorizontal="true"
-        android:text="Training 1">
-    </Button>
-    <Button
-        android:id="@+id/btn_trn_2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/btn_trn_1"
-        android:layout_centerHorizontal="true"
-        android:text="Training 2">
-    </Button>
-    <Button
-        android:id="@+id/btn_trn_3"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/btn_trn_2"
-        android:layout_centerHorizontal="true"
-        android:text="Training 3">
-    </Button>
-    <Button
-        android:id="@+id/btn_trn_4"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/btn_trn_3"
-        android:layout_centerHorizontal="true"
-        android:text="Training 4">
-    </Button>
-    <Button
-        android:id="@+id/btn_trn_5"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/btn_trn_4"
-        android:layout_centerHorizontal="true"
-        android:text="Training 5">
-    </Button>
-    <Button
-        android:id="@+id/btn_trn_6"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/btn_trn_5"
-        android:layout_centerHorizontal="true"
-        android:text="Training 6">
-    </Button>
-    <Button
-        android:id="@+id/btn_trn_7"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/btn_trn_6"
-        android:layout_centerHorizontal="true"
-        android:text="Training 7">
-    </Button>
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
 
+<FrameLayout
+    android:id="@+id/fragment_container"
+    android:layout_width="344dp"
+    android:layout_height="495dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
-</RelativeLayout>
+</FrameLayout>
+</android.support.constraint.ConstraintLayout>

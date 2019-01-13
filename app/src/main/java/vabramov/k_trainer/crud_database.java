@@ -13,7 +13,7 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class crud_database extends Fragment implements View.OnClickListener{
-    private Button BnAddWord,BnViewWord,BnDelete;
+    private Button BnAddWord,BnViewWord,BnDelete,BnUpdate;
 
     public crud_database() {
         // Required empty public constructor
@@ -33,6 +33,9 @@ public class crud_database extends Fragment implements View.OnClickListener{
             BnDelete = view.findViewById(R.id.btn_del);
             BnDelete.setOnClickListener(this);
 
+            BnUpdate = view.findViewById(R.id.btn_upd);
+            BnUpdate.setOnClickListener(this);
+
 
             return view;
     }
@@ -48,6 +51,9 @@ public class crud_database extends Fragment implements View.OnClickListener{
                 break;
             case R.id.btn_del:
                 Database.fragmentManager.beginTransaction().replace(R.id.fragment_container,new DeleteWordFragment()).addToBackStack(null).commit();
+                break;
+            case R.id.btn_upd:
+                Database.fragmentManager.beginTransaction().replace(R.id.fragment_container,new UpdateFragment()).addToBackStack(null).commit();
                 break;
         }
     }
