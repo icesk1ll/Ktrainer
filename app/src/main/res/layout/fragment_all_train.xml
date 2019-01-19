@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/AppText"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:textSize="24dp"
         android:layout_centerHorizontal="true"
@@ -19,7 +19,7 @@
         android:id="@+id/btn_trn_1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/trn_title"
         android:layout_centerHorizontal="true"
         android:text="Training 1">
@@ -28,7 +28,7 @@
         android:id="@+id/btn_trn_2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/btn_trn_1"
         android:layout_centerHorizontal="true"
         android:text="Training 2">
@@ -37,7 +37,7 @@
         android:id="@+id/btn_trn_3"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/btn_trn_2"
         android:layout_centerHorizontal="true"
         android:text="Training 3">
@@ -46,7 +46,7 @@
         android:id="@+id/btn_trn_4"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/btn_trn_3"
         android:layout_centerHorizontal="true"
         android:text="Training 4">
@@ -55,7 +55,7 @@
         android:id="@+id/btn_trn_5"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/btn_trn_4"
         android:layout_centerHorizontal="true"
         android:text="Training 5">
@@ -64,7 +64,7 @@
         android:id="@+id/btn_trn_6"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/btn_trn_5"
         android:layout_centerHorizontal="true"
         android:text="Training 6">
@@ -73,7 +73,7 @@
         android:id="@+id/btn_trn_7"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/btn_trn_6"
         android:layout_centerHorizontal="true"
         android:text="Training 7">

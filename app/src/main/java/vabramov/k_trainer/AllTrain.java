@@ -47,7 +47,25 @@ public class AllTrain extends Fragment implements View.OnClickListener{
             switch (view.getId())
             {
                 case R.id.btn_trn_1:
-                    Database.fragmentManager.beginTransaction().replace(R.id.fragment_container,new Train_1()).addToBackStack(null).commit();
+                    training.fragmentManager.beginTransaction().replace(R.id.fragment_container,new Train_1()).addToBackStack(null).commit();
+                    break;
+                case R.id.btn_trn_2:
+                    training.fragmentManager.beginTransaction().replace(R.id.fragment_container,new Train_2()).addToBackStack(null).commit();
+                    break;
+                case R.id.btn_trn_3:
+                    training.fragmentManager.beginTransaction().replace(R.id.fragment_container,new Train_3()).addToBackStack(null).commit();
+                    break;
+                case R.id.btn_trn_4:
+                    training.fragmentManager.beginTransaction().replace(R.id.fragment_container,new Train_4()).addToBackStack(null).commit();
+                    break;
+                case R.id.btn_trn_5:
+                    training.fragmentManager.beginTransaction().replace(R.id.fragment_container,new Train_5()).addToBackStack(null).commit();
+                    break;
+                case R.id.btn_trn_6:
+                    training.fragmentManager.beginTransaction().replace(R.id.fragment_container,new Train_6()).addToBackStack(null).commit();
+                    break;
+                case R.id.btn_trn_7:
+                    training.fragmentManager.beginTransaction().replace(R.id.fragment_container,new Train_7()).addToBackStack(null).commit();
                     break;
             }
     }
