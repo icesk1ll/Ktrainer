@@ -25,17 +25,12 @@ public class crud_database extends Fragment implements View.OnClickListener{
             View view = inflater.inflate(R.layout.fragment_crud_database,container,false);
             BnAddWord = view.findViewById(R.id.btn_add);
             BnAddWord.setOnClickListener(this);
-
             BnViewWord = view.findViewById(R.id.btn_view);
             BnViewWord.setOnClickListener(this);
-
             BnDelete = view.findViewById(R.id.btn_del);
             BnDelete.setOnClickListener(this);
-
             BnUpdate = view.findViewById(R.id.btn_upd);
             BnUpdate.setOnClickListener(this);
-
-
             return view;
     }
     @Override
