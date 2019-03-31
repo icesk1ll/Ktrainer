@@ -7,14 +7,12 @@ import android.os.Bundle;
 
 public class training extends AppCompatActivity {
     public static FragmentManager fragmentManager;
-    public static K_database myAppDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_training);
         fragmentManager = getSupportFragmentManager();
-        myAppDatabase = Room.databaseBuilder(getApplicationContext(),K_database.class,"worddb").allowMainThreadQueries().build();
         if(findViewById(R.id.fragment_container)!=null)
         {
             if(savedInstanceState!=null)

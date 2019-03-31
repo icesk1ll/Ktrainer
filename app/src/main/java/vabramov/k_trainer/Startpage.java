@@ -1,5 +1,6 @@
 package vabramov.k_trainer;
 
+import android.arch.persistence.room.Room;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.Button;
 
 public class Startpage extends AppCompatActivity implements OnClickListener {
 
+    public static K_database myAppDatabase;
     Button btn_acc;
     Button btn_trn;
     Button btn_voc;
@@ -17,7 +19,7 @@ public class Startpage extends AppCompatActivity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_startpage);
-
+        myAppDatabase = Room.databaseBuilder(getApplicationContext(),K_database.class,"worddb").allowMainThreadQueries().build();
         btn_acc = (Button) findViewById(R.id.btn_acc);
         btn_acc.setOnClickListener(this);
         btn_trn = (Button) findViewById(R.id.btn_trn);
