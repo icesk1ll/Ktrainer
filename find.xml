@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="File '...\app\src\main\java\vabramov\k_trainer\account.java [app]'" />
-    <option name="defaultScopeName" value="File '...\app\src\main\java\vabramov\k_trainer\account.java [app]'" />
-    <option name="SEARCH_SCOPE" value="File '...\app\src\main\java\vabramov\k_trainer\account.java [app]'" />
+    <option name="customScope" value="File '...\app\src\main\java\vabramov\k_trainer\Train_1.java [app]'" />
+    <option name="defaultScopeName" value="File '...\app\src\main\java\vabramov\k_trainer\Train_1.java [app]'" />
+    <option name="SEARCH_SCOPE" value="File '...\app\src\main\java\vabramov\k_trainer\Train_1.java [app]'" />
   </component>
 </application>
