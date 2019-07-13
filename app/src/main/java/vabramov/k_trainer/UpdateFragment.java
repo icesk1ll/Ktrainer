@@ -46,7 +46,7 @@ public class UpdateFragment extends Fragment {
                 word.setKword(word_word);
                 word.setTrans(word_trans);
 
-                Database.myAppDatabase.K_DAO().updateWord(word);
+                Startpage.myAppDatabase.K_DAO().updateWord(word);
                 Toast.makeText(getActivity(),"Word update successfully",Toast.LENGTH_SHORT).show();
 
 

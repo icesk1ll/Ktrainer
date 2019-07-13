@@ -2,7 +2,6 @@ package vabramov.k_trainer;
 
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import static vabramov.k_trainer.Database.myAppDatabase;
+import static vabramov.k_trainer.Startpage.myAppDatabase;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -41,7 +40,7 @@ public class Train_1 extends Fragment implements View.OnClickListener{
 
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+    public View onCreateView( LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_train_1, container, false);
         tv =  view.findViewById(R.id.tv);
@@ -87,10 +86,10 @@ public class Train_1 extends Fragment implements View.OnClickListener{
         }
         Collections.shuffle(list);
        tv.setText(String.valueOf(myAppDatabase.K_DAO().getTrans_word(list.get(0))));
-  //      but0.setText(String.valueOf((myAppDatabase.K_DAO().getKorean_word(list.get(list1.get(0))))));
-   //     but1.setText(String.valueOf((myAppDatabase.K_DAO().getKorean_word(list.get(list1.get(1))))));
-  //      but2.setText(String.valueOf((myAppDatabase.K_DAO().getKorean_word(list.get(list1.get(2))))));
-  //      but3.setText(String.valueOf((myAppDatabase.K_DAO().getKorean_word(list.get(list1.get(3))))));
+        but0.setText(String.valueOf((myAppDatabase.K_DAO().getKorean_word(list.get(list1.get(0))))));
+       but1.setText(String.valueOf((myAppDatabase.K_DAO().getKorean_word(list.get(list1.get(1))))));
+       but2.setText(String.valueOf((myAppDatabase.K_DAO().getKorean_word(list.get(list1.get(2))))));
+       but3.setText(String.valueOf((myAppDatabase.K_DAO().getKorean_word(list.get(list1.get(3))))));
     }
     private void Counter(){
         tx3.setText(String.valueOf(stat));

@@ -47,7 +47,7 @@ public class AddWordFragment extends Fragment {
                 word.setKword(word_word);
                 word.setTrans(word_trans);
 
-                Database.myAppDatabase.K_DAO().addWord(word);
+                Startpage.myAppDatabase.K_DAO().addWord(word);
                 Toast.makeText(getActivity(),"Word added successfully",Toast.LENGTH_SHORT).show();
 
                 Word_id.setText("");

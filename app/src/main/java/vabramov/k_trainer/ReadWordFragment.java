@@ -28,7 +28,7 @@ public class ReadWordFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_read_word, container, false);
         TxtInfo=view.findViewById(R.id.txt_display_info);
 
-        List<K_vocab> words = Database.myAppDatabase.K_DAO().getWords();
+        List<K_vocab> words = Startpage.myAppDatabase.K_DAO().getWords();
 
         String info="";
 

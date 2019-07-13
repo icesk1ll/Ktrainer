@@ -40,7 +40,7 @@ public class DeleteWordFragment extends Fragment {
                 int id = Integer.parseInt(TxtWordId.getText().toString());
                 K_vocab word = new K_vocab();
                 word.setId(id);
-                Database.myAppDatabase.K_DAO().deleteWord(word);
+                Startpage.myAppDatabase.K_DAO().deleteWord(word);
 
                 Toast.makeText(getActivity(),"Word successfully removed..",Toast.LENGTH_SHORT).show();
                 TxtWordId.setText("");
