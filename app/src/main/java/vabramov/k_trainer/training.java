@@ -1,6 +1,6 @@
 package vabramov.k_trainer;
 
-import android.arch.persistence.room.Room;
+import androidx.room.Room;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

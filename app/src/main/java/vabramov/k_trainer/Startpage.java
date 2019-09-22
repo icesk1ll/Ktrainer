@@ -1,6 +1,6 @@
 package vabramov.k_trainer;
 
-import android.arch.persistence.room.Room;
+import androidx.room.Room;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,14 +19,15 @@ public class Startpage extends AppCompatActivity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_startpage);
-        myAppDatabase = Room.databaseBuilder(getApplicationContext(),K_database.class,"worddb").allowMainThreadQueries().build();
-        btn_acc = (Button) findViewById(R.id.btn_acc);
+        myAppDatabase = Room.databaseBuilder(getApplicationContext(),K_database.class,"worddb").createFromAsset("worddb1.db").allowMainThreadQueries().build();
+        //db_copier.getInstance(this.getApplicationContext()).getRoomDatabase();
+        btn_acc = findViewById(R.id.btn_acc);
         btn_acc.setOnClickListener(this);
-        btn_trn = (Button) findViewById(R.id.btn_trn);
+        btn_trn = findViewById(R.id.btn_trn);
         btn_trn.setOnClickListener(this);
-        btn_voc = (Button) findViewById(R.id.btn_voc);
+        btn_voc =  findViewById(R.id.btn_voc);
         btn_voc.setOnClickListener(this);
-        btn_exit = (Button) findViewById(R.id.btn_exit);
+        btn_exit = findViewById(R.id.btn_exit);
         btn_exit.setOnClickListener(this);
     }
 

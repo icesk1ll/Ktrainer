@@ -1,7 +1,7 @@
 package vabramov.k_trainer;
 
 
-import android.arch.persistence.room.Delete;
+import androidx.room.Delete;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;

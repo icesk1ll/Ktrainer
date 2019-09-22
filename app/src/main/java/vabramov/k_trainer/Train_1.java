@@ -63,7 +63,7 @@ public class Train_1 extends Fragment implements View.OnClickListener{
         list1.add(1);
         list1.add(2);
         list1.add(3);
-        tv.setText(String.valueOf("Выберите правильный перевод из 4 предложенных. Количество слов - 20"));
+        tv.setText("Выберите правильный перевод из 4 предложенных. Количество слов - 20");
         stat=0;
         stat1=0;
         count=21;
@@ -81,7 +81,7 @@ public class Train_1 extends Fragment implements View.OnClickListener{
 
         Collections.shuffle(list1);
         list.clear();
-        for (int i=1; i<5; i++) {
+        for (int i=1; i<22; i++) {
             list.add(i);
         }
         Collections.shuffle(list);
@@ -102,7 +102,7 @@ public class Train_1 extends Fragment implements View.OnClickListener{
             but3.setVisibility(View.GONE);
             tv.setVisibility(View.GONE);
             but_m.setVisibility(View.VISIBLE);
-            but_m.setText(String.valueOf("Окончить тренировку"));
+            but_m.setText("Окончить тренировку");
         }
     }
     @Override
