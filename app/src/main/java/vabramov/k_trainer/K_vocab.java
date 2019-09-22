@@ -1,8 +1,8 @@
 package vabramov.k_trainer;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity(tableName = "vocabulary")
 public class K_vocab {
@@ -13,6 +13,8 @@ public class K_vocab {
     @ColumnInfo(name = "translate")
     private String trans;
 
+
+
     public int getId() {
         return id;
     }
@@ -21,7 +23,7 @@ public class K_vocab {
         this.id = id;
     }
 
-    public String getKword() {
+     String getKword() {
         return kword;
     }
 

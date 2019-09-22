@@ -35,10 +35,9 @@ public class ReadWordFragment extends Fragment {
         for (K_vocab word : words)
         {
             int id = word.getId();
-            String kword=word.getKword();
             String trans=word.getTrans();
-            info = info+"\n\n"+"ID :"+id+"\n Word :"+kword+"\n Translate :"+trans;
-
+            String kword=word.getKword();
+            info = info+"\n\n"+"ID :"+id+"\n Word :"+kword+"Translate :"+trans;
 
         }
 
